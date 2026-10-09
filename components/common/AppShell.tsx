@@ -12,7 +12,7 @@ export default function AppShell({ children }: AppShellProps) {
 
   const navItems = [
     { name: "Dashboard", href: "/" },
-    { name: "Users", href: "/users" },
+    { name: "Employees", href: "/users" }, 
     { name: "Roles", href: "/roles" },
     { name: "Permissions", href: "/permissions" },
   ];
