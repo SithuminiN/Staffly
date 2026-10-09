@@ -11,7 +11,7 @@ export const NAVIGATION_ITEMS: NavItem[] = [
     href: "/",
   },
   {
-    name: "Users",
+    name: "Employees",
     href: "/users",
     permission: "users.view",
   },

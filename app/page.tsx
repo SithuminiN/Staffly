@@ -313,7 +313,7 @@ export default function Page() {
             style={activeTab === name ? styles.navActive : styles.nav}
             onClick={() => setActiveTab(name)}
           >
-            {icon} <span>{name}</span>
+           {icon} <span>{name === "Users" ? "Employees" : name}</span>
           </button>
         ))}
 
@@ -330,7 +330,7 @@ export default function Page() {
         <header className="app-header" style={styles.header}>
           <div>
             <h1 style={styles.heading}>
-              {activeTab === "RBAC Actions" ? "RBAC-Aware Actions" : activeTab}
+              {activeTab === "RBAC Actions" ? "RBAC-Aware Actions" : activeTab === "Users" ? "Employees" : activeTab}
             </h1>
             <p style={styles.subtitle}>
               {activeTab === "Dashboard" &&
